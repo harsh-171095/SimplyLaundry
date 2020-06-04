@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddAddressCell" rowHeight="64" id="KGk-i7-Jjw" customClass="AddAddressCell" customModule="SimplyLaundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bng-ow-1QH">
+                        <rect key="frame" x="15" y="15.5" width="150" height="45"/>
+                        <color key="backgroundColor" red="0.0" green="0.59607843140000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="aH4-uN-ZOs"/>
+                            <constraint firstAttribute="height" constant="45" id="gpw-PK-R2F"/>
+                        </constraints>
+                        <state key="normal" title="ADD ADDRESS       ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abl-Hq-xeh">
+                        <rect key="frame" x="140" y="33" width="10" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="PtX-Le-ZHr"/>
+                            <constraint firstAttribute="width" constant="10" id="ugi-AK-r3s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bng-ow-1QH" secondAttribute="trailing" constant="15" id="BVz-y4-8i4"/>
+                    <constraint firstAttribute="bottom" secondItem="Bng-ow-1QH" secondAttribute="bottom" constant="10" id="F7M-P6-9IU"/>
+                    <constraint firstItem="Bng-ow-1QH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bBk-eu-oEa"/>
+                    <constraint firstItem="abl-Hq-xeh" firstAttribute="trailing" secondItem="Bng-ow-1QH" secondAttribute="trailing" constant="-15" id="fuX-pL-kg0"/>
+                    <constraint firstItem="abl-Hq-xeh" firstAttribute="centerY" secondItem="Bng-ow-1QH" secondAttribute="centerY" id="tvc-al-qaS"/>
+                    <constraint firstItem="Bng-ow-1QH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wTB-8s-Kp6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddAddress" destination="Bng-ow-1QH" id="IOB-my-PRf"/>
+                <outlet property="consButtonWidth" destination="aH4-uN-ZOs" id="opo-bE-pwu"/>
+                <outlet property="lblCircle" destination="abl-Hq-xeh" id="aTs-nU-R7i"/>
+            </connections>
+            <point key="canvasLocation" x="44.799999999999997" y="62.968515742128943"/>
+        </tableViewCell>
+    </objects>
+</document>

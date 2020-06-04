@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PriceListCollectionCell" id="gTV-IL-0wX" customClass="PriceListCollectionCell" customModule="SimplyLaundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-QO-tpS">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-KW-3Lx">
+                                <rect key="frame" x="110" y="25" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" image="apartment" translatesAutoresizingMaskIntoConstraints="NO" id="AAY-Qf-QkS">
+                                <rect key="frame" x="54" y="12" width="46" height="46"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cLe-KW-3Lx" firstAttribute="centerX" secondItem="dC8-QO-tpS" secondAttribute="centerX" id="0Dm-me-oig"/>
+                            <constraint firstItem="cLe-KW-3Lx" firstAttribute="leading" secondItem="AAY-Qf-QkS" secondAttribute="trailing" constant="10" id="4ny-9P-lEt"/>
+                            <constraint firstItem="AAY-Qf-QkS" firstAttribute="centerY" secondItem="dC8-QO-tpS" secondAttribute="centerY" id="8dp-A7-Pd2"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cLe-KW-3Lx" secondAttribute="trailing" constant="10" id="9IQ-Ee-PpA"/>
+                            <constraint firstItem="cLe-KW-3Lx" firstAttribute="centerY" secondItem="AAY-Qf-QkS" secondAttribute="centerY" id="R8y-La-yBC"/>
+                            <constraint firstItem="AAY-Qf-QkS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dC8-QO-tpS" secondAttribute="leading" constant="10" id="g3J-CB-yqi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dC8-QO-tpS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cw7-Nd-0Iq"/>
+                <constraint firstAttribute="bottom" secondItem="dC8-QO-tpS" secondAttribute="bottom" id="VB0-Vr-sZo"/>
+                <constraint firstAttribute="trailing" secondItem="dC8-QO-tpS" secondAttribute="trailing" id="dSf-xg-Z4O"/>
+                <constraint firstItem="dC8-QO-tpS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yzo-dw-Cdq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="262" height="70"/>
+            <connections>
+                <outlet property="imgIcon" destination="AAY-Qf-QkS" id="Iwd-qG-nnU"/>
+                <outlet property="lblTitle" destination="cLe-KW-3Lx" id="F09-Va-9HT"/>
+                <outlet property="viewParent" destination="dC8-QO-tpS" id="j5L-3Y-jS9"/>
+            </connections>
+            <point key="canvasLocation" x="302.39999999999998" y="149.32533733133434"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="apartment" width="46" height="46"/>
+    </resources>
+</document>
